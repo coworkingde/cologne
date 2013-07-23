@@ -1,0 +1,5 @@
+name: Coworking Cologne
+pygments: false
+sass:
+  syntax: scss        # scss|sass
+  style:  compressed  # nested|expanded|compact|compressed

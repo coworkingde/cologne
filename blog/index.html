@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog | Coworking Cologne
+---
+<div class="hero blog pure-g-r">
+  <div class="pure-u-1">
+    <p><img class="flame" src="/img/flame_500.png" /></p>
+    <h1>{{ site.name }}</h1>
+    <p><span class="subheading">Blog</span></p>
+  </div>
+</div>
+
+<div id="content">
+  <div class="pure-g-r">
+    <div class="pure-u-1">
+
+      <h2>Blog</h2>
+
+      <ul class="posts">
+        {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% stylesheet app %}
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+     <!--[if lte IE 8]>
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+     <![endif]-->
+
+    {% include icons.html %}
+  </head>
+  <body>
+    <header>
+      <div class="content pure-g-r">
+        <div id="logo" class="pure-u-1-5">
+          <a href="/"><img class="flame" src="{% asset_path cowoco_icon.png %}" /></a>
+        </div>
+        <div class="menu-wrapper pure-u-4-5">
+          <nav id ="menu" class="pure-menu pure-menu-open pure-menu-horizontal">
+            <ul>
+              <li>
+                <a href="/space">Space</a>
+              </li>
+              <li>
+                <a href="/community">Community</a>
+              </li>
+              <li>
+                <a href="/events">Events</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    {{ content }}
+
+    {% javascript vendor/responsive-nav %}
+
+    <script>
+    var navigation = responsiveNav("#menu", { // Selector: The ID of the wrapper
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 400, // Integer: Speed of the transition, in milliseconds
+        label: "", // String: Label for the navigation toggle
+        insert: "after", // String: Insert the toggle before or after the navigation
+        customToggle: "", // Selector: Specify the ID of a custom toggle
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+        init: function(){}, // Function: Init callback
+        open: function(){}, // Function: Open callback
+        close: function(){} // Function: Close callback
+    });
+    </script>
+
+  </body>
+</html>

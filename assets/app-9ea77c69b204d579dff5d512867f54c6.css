@@ -891,25 +891,33 @@ a:focus {
 
 body {
   background-color: white;
-  font: 16px "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font: 16px "VAG Rounded W01 Light";
   text-align: center;
-  padding-top: 42px; }
+  padding-top: 0px; }
 
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-weight: normal;
-  color: #666666; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "VAG Rounded W01 Bold";
+  font-weight: bold; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    font-weight: normal;
+    color: #666666; }
+
+strong {
+  font-family: "VAG Rounded W01 Bold";
+  font-weight: normal; }
 
 a {
   color: #8a1679; }
   a:hover {
     color: black; }
 
-body {
-  background: url("/img/background.png") bottom right no-repeat; }
+#background {
+  position: fixed;
+  bottom: 0px;
+  right: 0px; }
 
 body > header {
   background: #f3f3f3;
-  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -928,36 +936,34 @@ body > header {
     height: 48px; }
 
 @media screen and (min-width: 40em) {
-  body > header {
-    position: fixed; }
-    body > header #logo a {
-      display: inline-block;
-      height: 42px;
-      padding: 5px 20px; }
-    body > header #logo img {
-      height: 32px; } }
+  body > header #logo a {
+    display: inline-block;
+    height: 42px;
+    padding: 5px 20px; }
+  body > header #logo img {
+    height: 32px; } }
 .hero {
+  height: 300px;
   color: white;
   /* text-shadow: #000 1px 1px 2px; */ }
+  .hero p {
+    margin: 0px;
+    padding: 0px; }
   .hero.frontpage {
-    padding: 60px 0;
-    background: url("/img/bg_hero_frontpage_1.jpg") 50% center no-repeat;
+    padding: 0;
+    background: url("/img/frontpage.jpg") 50% center no-repeat;
     background-size: cover; }
-  .hero.schedule {
-    padding: 60px 0;
-    background: url("/img/bg_hero_session-board.jpg") 50% center no-repeat;
+  .hero.events {
+    padding: 0;
+    background: url("/img/events.jpg") 50% center no-repeat;
     background-size: cover; }
-  .hero.tickets {
-    padding: 60px 0;
-    background: url("/img/bg_hero_offline-twitter.jpg") 50% center no-repeat;
+  .hero.contact {
+    padding: 0;
+    background: url("/img/contact.jpg") 50% center no-repeat;
     background-size: cover; }
-  .hero.sponsors, .hero.sponsors_serious, .hero.sponsors_small-business, .hero.sponsors_micro {
-    padding: 60px 0;
-    background: url("/img/bg_hero_main-hall-2.jpg") 50% center no-repeat;
-    background-size: cover; }
-  .hero.blog {
-    padding: 60px 0;
-    background: url("/img/bg_hero_tent-indoors.jpg") 50% center no-repeat;
+  .hero.community {
+    padding: 0;
+    background: url("/img/community.jpg") 50% center no-repeat;
     background-size: cover; }
   .hero h1, .hero .subheading {
     display: inline-block;
@@ -988,7 +994,7 @@ body > header {
     margin-left: -20px; }
 
 #map {
-  height: 435px; }
+  height: 300px; }
 
 .leaflet-popup {
   font-size: 1.2em;
@@ -1073,7 +1079,7 @@ body > header {
   display: block; }
 
 #menu {
-  text-align: left;
+  text-align: center;
   background: transparent; }
   #menu ul {
     margin: 0;
@@ -1091,8 +1097,9 @@ body > header {
       color: #666666;
       border: 0; }
       #menu li a:hover {
-        background: #cbc4b2;
-        color: black; }
+        color: #8a1679; }
+      #menu li a .active {
+        color: #8a1679; }
   #menu.opened {
     max-height: 9999px;
     margin-bottom: 10px; }
@@ -1112,7 +1119,7 @@ body > header {
     display: inline-block; }
 
   #menu {
-    text-align: right; }
+    text-align: center; }
     #menu ul {
       margin: 0;
       display: inline-block;
@@ -1157,58 +1164,6 @@ body > header {
     -moz-background-size: 96px 96px;
     -o-background-size: 96px 96px;
     background-size: 96px 96px; } }
-.sponsors, .sponsors_serious, .sponsors_small-business, .sponsors_micro {
-  padding: 0; }
-
-.sponsors--box {
-  background-color: #f3f3f3;
-  padding: 1px;
-  margin: 0 10px 10px 0;
-  display: block;
-  color: black;
-  text-decoration: none; }
-  .sponsors--box:hover {
-    background-color: #cbc4b2;
-    color: black;
-    text-decoration: none; }
-  .sponsors--box > h3, .sponsors--box > h4, .sponsors--box > h5 {
-    margin-top: 0.5em;
-    margin-bottom: 0; }
-
-.sponsors--logo {
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: white;
-  font-size: 0;
-  text-indent: -1000000px; }
-  .sponsors--logo.as-railslove {
-    background-image: url("/assets/sponsors/railslove-a93c330c7d5de3d6bcaa58c193559dd3.png"); }
-  .sponsors--logo.as-zweitag {
-    background-image: url("/assets/sponsors/zweitag-d9a0c9f27bc83e42d3ec98aedef0b4b6.png"); }
-  .sponsors--logo.as-anynines {
-    background-image: url("/assets/sponsors/anynines-1c161d952a64cc8c0dac0089100f4e5d.png"); }
-  .sponsors--logo.as-9elements {
-    background-image: url("/assets/sponsors/9elements-3e6f0ea2a96cb37100c5f202242554b0.png"); }
-  .sponsors--logo.as-triagens {
-    background-image: url("/assets/sponsors/triagens-3fef530d4e8707dfbeba16870c909e66.png"); }
-  .sponsors--logo.as-5apps {
-    background-image: url("/assets/sponsors/5apps-4ec2c12276b1342dce6922ab999098a7.png"); }
-
-.sponsors_serious .sponsors--logo {
-  height: 150px; }
-
-.sponsors_small-business .sponsors--logo {
-  height: 130px; }
-
-.sponsors_micro .sponsors--logo {
-  height: 100px; }
-
-.become-a-sponsor {
-  padding-top: 20px;
-  font-size: 15px; }
-
 .image {
   display: block;
   border: none; }

@@ -1,10 +1,11 @@
-body {
-  background: url('/img/background.png') bottom right no-repeat;
+#background {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }
 
 body > header {
   background: $light-grey;
-  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -31,8 +32,6 @@ body > header {
 
 @media screen and (min-width: 40em) {
   body > header {
-    position: fixed;
-
     #logo a {
       display: inline-block;
       height: 32px + $padding;
@@ -46,31 +45,31 @@ body > header {
 }
 
 .hero {
+  p {
+    margin: 0px;
+    padding: 0px;
+  } 
+  height: 300px;
   color: $white;
   /* text-shadow: #000 1px 1px 2px; */
   &.frontpage {
-    padding: 60px 0;
-    background: url('/img/bg_hero_frontpage_1.jpg') 50% center no-repeat;
+    padding: 0;
+    background: url('/img/frontpage.jpg') 50% center no-repeat;
     background-size: cover;
   }
-  &.schedule {
-    padding: 60px 0;
-    background: url('/img/bg_hero_session-board.jpg') 50% center no-repeat;
+  &.events {
+    padding: 0;
+    background: url('/img/events.jpg') 50% center no-repeat;
     background-size: cover;
   }
-  &.tickets {
-    padding: 60px 0;
-    background: url('/img/bg_hero_offline-twitter.jpg') 50% center no-repeat;
+  &.contact {
+    padding: 0;
+    background: url('/img/contact.jpg') 50% center no-repeat;
     background-size: cover;
   }
-  &.sponsors {
-    padding: 60px 0;
-    background: url('/img/bg_hero_main-hall-2.jpg') 50% center no-repeat;
-    background-size: cover;
-  }
-  &.blog {
-    padding: 60px 0;
-    background: url('/img/bg_hero_tent-indoors.jpg') 50% center no-repeat;
+  &.community {
+    padding: 0;
+    background: url('/img/community.jpg') 50% center no-repeat;
     background-size: cover;
   }
 
@@ -103,7 +102,7 @@ body > header {
 }
 
 #map {
-  height: 435px;
+  height: 300px;
 }
 
 .leaflet-popup {

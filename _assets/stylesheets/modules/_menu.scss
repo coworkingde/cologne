@@ -6,7 +6,7 @@
 }
 
 #menu {
-  text-align: left;
+  text-align: center;
   background: transparent;
 
   ul {
@@ -29,8 +29,10 @@
       border: 0;
 
       &:hover {
-        background: $medium-grey;
-        color: $dark-text-color;
+        color: $red;
+      }
+      .active { 
+        color: $red;
       }
     }
   }
@@ -58,7 +60,7 @@
   }
 
   #menu {
-    text-align: right;
+    text-align: center;
 
     ul {
       margin: 0;

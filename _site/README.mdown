@@ -1,0 +1,9 @@
+
+
+### Deployment
+
+* git pull origin master
+* bundle exec jekyll build
+* git add --all && git commit -am 'build'
+* git push origin master
+* git subtree push --prefix _site origin gh-pages

@@ -1,5 +1,7 @@
+//= require vendor/jquery-1.10.1.min
 //= require vendor/leaflet-providers
 //= require vendor/bouncemarker
+//= require vendor/jquery.fancybox
 
 function isMobile() {
  if( navigator.userAgent.match(/Android/i)
@@ -38,4 +40,6 @@ if (isMobile()) {
   map.dragging.disable();
 };
 
-
+$(document).ready(function() {
+  $(".fancybox").fancybox();
+});

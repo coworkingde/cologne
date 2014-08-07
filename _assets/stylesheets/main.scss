@@ -1,6 +1,6 @@
 #background {
   position: fixed;
-  bottom: 0px;
+  bottom: -5px;
   right: 0px;
 }
 
@@ -48,7 +48,7 @@ body > header {
   p {
     margin: 0px;
     padding: 0px;
-  } 
+  }
   height: 300px;
   color: $white;
   /* text-shadow: #000 1px 1px 2px; */
@@ -220,4 +220,20 @@ body > header {
   width: 100%;
   text-align: left;
   margin: 40px 0;
+}
+
+.faq {
+  list-style-type: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fancybox {
+  text-decoration: none;
+  img {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }

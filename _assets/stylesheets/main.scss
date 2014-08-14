@@ -224,6 +224,10 @@ body > header {
 
 .faq {
   list-style-type: none;
+  padding-left: 0px;
+  li p {
+    padding-left: 40px;
+  }
 }
 
 .text-center {

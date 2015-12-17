@@ -1088,6 +1088,12 @@ body > header {
     max-width: 200px;
     max-height: 200px; }
 
+.goodbye-img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* responsive-nav.js v1.0.14 by @viljamis */
 /* heavily customized for railscamp site */
 .menu-wrapper {

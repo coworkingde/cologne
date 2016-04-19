@@ -2648,7 +2648,7 @@ var icon = L.icon({
 
 L.tileLayer.provider('MapBox.slogmen.map-64a4ugze').addTo(map);
 L.control.zoom({position: 'bottomleft'}).addTo(map);
-L.marker([50.9222007, 6.9628545359],
+L.marker([50.9228, 6.9628545359],
   {icon: icon, bounceOnAdd: true, bounceOnAddOptions: {duration: 1200, height: 300}}
 ).addTo(map)
 .bindPopup('<b>Coworking Cologne</b> <br> <span>An der Bottmühle 13<br />50678 Köln');

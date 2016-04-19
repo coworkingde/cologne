@@ -1,14 +1,14 @@
-/*
+/*!
 Pure v0.1.0
 Copyright 2013 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 https://github.com/yui/pure/blob/master/LICENSE.md
 */
-/*
+/*!
 normalize.css v1.1.2 | MIT License | git.io/normalize
 Copyright (c) Nicolas Gallagher and Jonathan Neal
 */
-/* normalize.css v1.1.2 | MIT License | git.io/normalize */
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
@@ -235,7 +235,7 @@ a:focus {
   color: rgba(0, 0, 0, 0.8);
   *color: #444;
   border: 1px solid #999;
-  border: 0 rgba(0, 0, 0, 0);
+  border: 0 transparent;
   background-color: #E6E6E6;
   text-decoration: none;
   -webkit-border-radius: 2px;
@@ -255,7 +255,7 @@ a:focus {
   background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.05));
   background-image: -ms-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.15));
   background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05));
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05)); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.05)); }
 
 .pure-button-active, .pure-button:active {
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -885,12 +885,12 @@ a:focus {
   border-bottom-width: 0; }
 
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  background-color: white;
+  background-color: #fff;
   font: 16px "VAG Rounded W01 Light";
   text-align: center;
   padding-top: 0px; }
@@ -900,7 +900,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-weight: normal;
-    color: #666666; }
+    color: #666; }
 
 strong {
   font-family: "VAG Rounded W01 Bold";
@@ -909,7 +909,7 @@ strong {
 a {
   color: #8a1679; }
   a:hover {
-    color: black; }
+    color: #000; }
 
 #background {
   position: fixed;
@@ -944,7 +944,7 @@ body > header {
     height: 32px; } }
 .hero {
   height: 300px;
-  color: white;
+  color: #fff;
   /* text-shadow: #000 1px 1px 2px; */ }
   .hero p {
     margin: 0px;
@@ -977,17 +977,15 @@ body > header {
     /* text-shadow: #000 1px 1px 3px; */ }
   .hero h1 {
     font-size: 40px;
-    -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg); }
   .hero .subheading {
     font-size: 18px;
-    -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg); }
   .hero img.flame {
     opacity: 0.9;
@@ -998,9 +996,9 @@ body > header {
 
 .leaflet-popup {
   font-size: 1.2em;
-  color: black; }
+  color: #000; }
   .leaflet-popup span {
-    color: #666666; }
+    color: #666; }
 
 .leaflet-popup-close-button {
   padding: 8px 25px 0 0; }
@@ -1012,8 +1010,9 @@ body > header {
   padding: 40px 20px 100px 20px;
   text-align: left;
   font-size: 18px;
-  -webkit-hyphens: auto;
   -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto; }
   #content p, #content li {
     line-height: 1.6em; }
@@ -1031,7 +1030,7 @@ body > header {
   font-size: 32px;
   font-weight: bold; }
 .post .meta {
-  color: #666666; }
+  color: #666; }
 .post p {
   margin: 1.5em 0; }
 .post ul, .post ol {
@@ -1062,7 +1061,7 @@ body > header {
 .travel-information h4 {
   margin-bottom: 0; }
 .travel-information small {
-  color: #666666;
+  color: #666;
   font-weight: 300; }
 
 .vehicle {
@@ -1088,13 +1087,13 @@ body > header {
     max-width: 200px;
     max-height: 200px; }
 
-.goodbye-img {
+.we-are-back-img {
   width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* responsive-nav.js v1.0.14 by @viljamis */
+/*! responsive-nav.js v1.0.14 by @viljamis */
 /* heavily customized for railscamp site */
 .menu-wrapper {
   display: block; }
@@ -1115,7 +1114,7 @@ body > header {
     border: 1px solid #cbc4b2; }
     #menu li a {
       padding: 5px 20px;
-      color: #666666;
+      color: #666;
       border: 0; }
       #menu li a:hover {
         color: #8a1679; }
@@ -1163,8 +1162,9 @@ body > header {
     display: none; } }
 #nav-toggle {
   -webkit-touch-callout: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
   -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
   width: 48px;
   height: 58px;
@@ -1172,7 +1172,7 @@ body > header {
   bottom: 0;
   right: 0;
   overflow: hidden;
-  background: transparent url("/assets/menu-b660b3d3de7881db40fdfebb1bbd7d80.png") no-repeat 47% 48%; }
+  background: transparent url("/assets/menu.png") no-repeat 47% 48%; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   body > header #logo img {
@@ -1180,10 +1180,10 @@ body > header {
     width: 48px; }
 
   #nav-toggle {
-    background-image: url("/assets/menu-2x-30344e49a37bf1d4c753b39ebbd00ce1.png");
-    -webkit-background-size: 96px 96px;
+    background-image: url("/assets/menu-2x.png");
     -moz-background-size: 96px 96px;
     -o-background-size: 96px 96px;
+    -webkit-background-size: 96px 96px;
     background-size: 96px 96px; } }
 .image {
   display: block;
@@ -1191,7 +1191,7 @@ body > header {
   .image.as-full-width {
     width: 100%; }
 
-/* fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
 .fancybox-outer,
@@ -1257,7 +1257,7 @@ body > header {
   max-height: 100%; }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-  background-image: url("/assets/fancybox_sprite-daa88338eb7d880f90b1b0bc51b68808.png"); }
+  background-image: url("/assets/fancybox_sprite.png"); }
 
 #fancybox-loading {
   position: fixed;
@@ -1273,7 +1273,7 @@ body > header {
 #fancybox-loading div {
   width: 44px;
   height: 44px;
-  background: url("/assets/fancybox_loading-df8e011a356be9f6d7951486fe56d92e.gif") center center no-repeat; }
+  background: url("/assets/fancybox_loading.gif") center center no-repeat; }
 
 .fancybox-close {
   position: absolute;
@@ -1291,9 +1291,9 @@ body > header {
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  background: transparent url("/assets/blank-64738d868ebe85842d28ad4a2b4b59b1.gif");
+  background: transparent url("/assets/blank.gif");
   /* helps IE */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   z-index: 8040; }
 
 .fancybox-prev {
@@ -1350,7 +1350,7 @@ body > header {
   overflow: hidden;
   display: none;
   z-index: 8010;
-  background: url("/assets/fancybox_overlay-bb5bd219f6ea81f636a85e3371e04947.png"); }
+  background: url("/assets/fancybox_overlay.png"); }
 
 .fancybox-overlay-fixed {
   position: fixed;
@@ -1416,11 +1416,11 @@ body > header {
 /*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-    background-image: url("/assets/fancybox_sprite@2x-9febfae6c3e18ae2af491643e1afa407.png");
+    background-image: url("/assets/fancybox_sprite@2x.png");
     background-size: 44px 152px;
     /*The size of the normal image, half the size of the hi-res image*/ }
 
   #fancybox-loading div {
-    background-image: url("/assets/fancybox_loading@2x-647d12e653687ce415dbbb777cff24c6.gif");
+    background-image: url("/assets/fancybox_loading@2x.gif");
     background-size: 24px 24px;
     /*The size of the normal image, half the size of the hi-res image*/ } }
